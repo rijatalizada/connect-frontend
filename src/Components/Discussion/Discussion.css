@@ -1,0 +1,17 @@
+.table-item {
+  border-right: 1px solid #ddd;
+  display: table-cell;
+  padding: 1.15em 1.5rem;
+  font-weight: 700;
+  vertical-align: middle;
+}
+
+#discussionCard{
+  box-shadow: inset 0px 0px 9px -5px rgba(0,0,0,0.73);
+}
+
+@media (max-width: 1024px) {
+  .not-mandatory {
+    display: none;
+  }
+}

@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Trispace&display=swap');
+@tailwind base;
+
+@layer base {
+  :root {
+    --color-primary: #1d84b5;
+    --color-secondary: white;
+    --font-kdam: "Kdam Thmor Pro", sans-serif;
+    --font-inconsolata: "Inconsolata", monospace;
+    --font-triscope: "Trispace", sans-serif;
+  }
+}
+
+@media only screen and (max-height: 768px) and (min-width: 1439px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(251, 246, 237, 0.494);
+  min-height: 100vh;
+}
+
+.empty-icons {
+  display: flex !important;
+}
+
+#footer-contact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: rgb(54, 66, 83);
+  background: linear-gradient(
+    90deg,
+    rgba(54, 66, 83, 1) 10%,
+    rgba(222, 222, 222, 1) 35%,
+    rgba(226, 226, 226, 1) 65%,
+    rgba(54, 66, 83, 1) 90%
+  );
+}
+
+.contactInfo{
+  
+}
+
+svg[fill="currentColor"] {
+  display: inline !important;
+}
+
+footer .under::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.2rem;
+  bottom: 0;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+}
+@media (max-width: 1440px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1279px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1023px) {
+  html {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 767px) {
+  html {
+    font-size: 8px;
+  }
+}

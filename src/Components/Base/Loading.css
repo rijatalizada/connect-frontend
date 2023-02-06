@@ -1,0 +1,36 @@
+.loader{
+    font-size: 5rem;
+    color: #fff;
+    position: relative;
+}
+
+.loader span{
+    mix-blend-mode: difference;
+}
+
+.loader::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 20px;
+    height: calc(100% - 40px);
+    width: 30%;
+    background-color: #fff;
+    border-radius: 50%;
+    animation: loader 1s infinite;
+    z-index: -1;
+    color: black;
+    overflow: hidden;
+    animation: animate 4s infinite linear;
+}
+
+@keyframes animate {
+    0%,
+    100% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(250px);
+    }
+}

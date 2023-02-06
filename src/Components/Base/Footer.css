@@ -1,0 +1,71 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css";
+
+.contactInfo {
+  color: white;
+  animation: first_color 0.5s ease-in-out infinite alternate;
+  cursor: pointer;
+}
+
+.contactInfo:nth-child(2) {
+  animation: second_color 0.5s ease-in-out infinite alternate;
+}
+
+.contactInfo:nth-child(3) {
+  animation: third_color 0.5s ease-in-out infinite alternate;
+}
+
+.contactInfo:nth-child(4) {
+  animation: fourth_color 0.5s ease-in-out infinite alternate;
+}
+
+.contactInfo:nth-child(5) {
+  animation: fifth_color 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes first_color {
+  0% {
+    text-shadow: 0 0 10px #ff1177, 0 0 20px #d6249f, 0 0 30px #285aeb;
+  }
+  100% {
+    text-shadow: 0 0 5px #ff1177, 0 0 10px #d6249f, 0 0 15px #285aeb;
+  }
+}
+
+@keyframes second_color {
+  0% {
+    text-shadow: 0 0 10px #128c7e, 0 0 20px #25d366, 0 0 30px #285aeb;
+  }
+  100% {
+    text-shadow: 0 0 5px #128c7e, 0 0 10px #25d366, 0 0 15px #285aeb;
+  }
+}
+
+@keyframes third_color {
+  0% {
+    text-shadow: 0 0 10px #4267b2, 0 0 20px #898f9c, 0 0 30px #000000;
+  }
+  100% {
+    text-shadow: 0 0 5px #4267b2, 0 0 10px #898f9c, 0 0 15px #000000;
+  }
+}
+
+@keyframes fourth_color {
+    0% {
+      text-shadow: 0 0 10px #1DA1F2, 0 0 20px #657786, 0 0 30px #F5F8FA;
+    }
+    100% {
+      text-shadow: 0 0 5px #1DA1F2, 0 0 10px #657786, 0 0 15px #F5F8FA;
+    }
+  }
+
+  @keyframes fifth_color {
+    0% {
+      text-shadow: 0 0 10px #FF0000, 0 0 20px #FF00FF, 0 0 30px #E6FB04;
+    }
+    100% {
+      text-shadow: 0 0 5px #FF0000, 0 0 10px #FF00FF, 0 0 15px #E6FB04;
+    }
+  }
+  
+
+  
